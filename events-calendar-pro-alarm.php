@@ -3,6 +3,12 @@
 Plugin Name: The Events Calendar Pro Alarm Addon
 Description: This plugin adds an alarm functionality to The Events Calendar Pro plugin by using the Additional Fields feature of Events Calendar Pro.
 http://tri.be/wordpress-events-calendar-pro/
+Version: 1.0
+Text Domain: events-calendar-pro-alarm
+Author: Andy Fragen
+Author URI: http://thefragens.com/blog/
+License: GNU General Public License v2
+License URI: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 */
 /* Add your functions below this line */
 
