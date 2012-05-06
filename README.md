@@ -15,3 +15,5 @@ You must have The Events Calendar PRO plugin installed. You will then need to cr
   * 60
 
 Place this plugin in the wp-content/Plugins folder and activate.
+
+Thanks to Joey Kudish of tri.be for the add_filter code.
