@@ -17,3 +17,7 @@ You **must** have The Events Calendar PRO plugin installed. You will then need t
 Place this plugin in the wp-content/Plugins folder and activate.
 
 Thanks to Joey Kudish of tri.be for the add_filter code.
+
+You can read my blog post on this code at http://thefragens.com/blog/2012/05/add-alarm-to-events-calendar-pro/
+
+The code repository is at GitHub: https://github.com/afragen/events-calendar-pro-alarm/
