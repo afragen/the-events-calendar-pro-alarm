@@ -5,7 +5,7 @@ Description: This plugin adds an alarm functionality to The Events Calendar PRO 
 Version: 1.0
 Text Domain: events-calendar-pro-alarm
 Author: Andy Fragen & Joey Kudish (Modern Tribe, Inc.)
-Author URI: http://thefragens.com/blog/
+Author URI: http://thefragens.com/blog/2012/05/add-alarm-to-events-calendar-pro/
 License: GNU General Public License v2
 License URI: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 */
