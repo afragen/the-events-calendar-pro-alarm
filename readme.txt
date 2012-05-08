@@ -1,4 +1,4 @@
-# The Events Calendar PRO Alarm 
+=== The Events Calendar PRO Alarm ===
 Contributors: afragen
 Tags: events
 Requires at least: 3.1
@@ -7,15 +7,13 @@ Stable tag: 1.0
 
 Add alarm/alert to iCal feed created from The Events Calendar PRO plugin.
 
-## Description
+== Description ==
 
 Are you using The Events Calendar PRO plugin? Do you wish that you could add an alarm or alert to any event?
 
 Simple, just install The Events Calendar PRO Alarm and in the Settings page for The Events Calendar PRO add an Additional Field for Alarms.
 
-Thanks to Joey Kudish of tri.be for the add_filter code.
-
-## Installation
+== Installation ==
 
 1. Upload the entire `/events-calendar-pro-alarm/` folder to the `/wp-content/plugins/` directory.
 1. Activate the plugin.
@@ -30,24 +28,25 @@ Thanks to Joey Kudish of tri.be for the add_filter code.
     * 60
 
 
-## Frequently Asked Questions
+== Frequently Asked Questions ==
 
-### Does the plugin require the paid The Events Calendar PRO plugin? 
+= Does the plugin require the paid The Events Calendar PRO plugin? =
 
 Yes. [Events Calendar PRO](http://tri.be/wordpress-events-calendar-pro/) is written by Modern Tribe, Inc.
 
 It also requires [The Events Calendar plugin](http://wordpress.org/extend/plugins/the-events-calendar/).
 
-#### Where can I report bugs? 
+= Where can I report bugs? =
 
 Add a new topic on the [WordPress Support Forum](http://wordpress.org/tags/events-calendar-pro-alarm).
 
-## Screenshots
+== Screenshots ==
 
 ![Additonal Field](./screenshot1.png)
 
-## Changelog 
+== Changelog ==
 
-### 1.0
+= 1.0 =
 * Initial release.
+* Thanks to Joey Kudish of tri.be for the add_filter code.
 
