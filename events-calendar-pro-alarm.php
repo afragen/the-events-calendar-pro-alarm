@@ -22,7 +22,7 @@ License URI: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 * @link 		https://github.com/afragen/events-calendar-pro-alarm/
 * @version 		1.0
 * @author 		Andy Fragen <andy@thefragens.com>
-* @copyright   Copyright (c) 2012, Andrew Fragen
+* @copyright   	Copyright (c) 2012, Andrew Fragen
 *
 * The Events Calendar PRO Alarm is free software; you can redistribute it and/or modify it under
 * the terms of the GNU General Public License version 2, as published by the
