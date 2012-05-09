@@ -52,3 +52,4 @@ Add a new topic on the [WordPress Support Forum](http://wordpress.org/tags/event
 * Thanks to Joey Kudish of tri.be for the add_filter code.
 
 == Upgrade Notice ==
+Initial release
