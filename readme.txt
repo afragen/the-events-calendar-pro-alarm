@@ -44,7 +44,7 @@ Add a new topic on the [WordPress Support Forum](http://wordpress.org/tags/event
 
 == Screenshots ==
 
-![Additonal Field](./screenshot1.png)
+1. Additional Fields settings.
 
 == Changelog ==
 
