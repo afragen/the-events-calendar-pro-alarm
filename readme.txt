@@ -4,6 +4,7 @@ Tags: events
 Requires at least: 3.1
 Tested up to: 3.3.2
 Stable tag: 1.0
+License: GPLv2
 
 Add alarm/alert to iCal feed created from The Events Calendar PRO plugin.
 
@@ -50,3 +51,4 @@ Add a new topic on the [WordPress Support Forum](http://wordpress.org/tags/event
 * Initial release.
 * Thanks to Joey Kudish of tri.be for the add_filter code.
 
+== Upgrade Notice ==
