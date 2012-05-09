@@ -1,10 +1,10 @@
 # The Events Calendar PRO Alarm 
-Contributors: afragen
-Tags: events
-Requires at least: 3.1
-Tested up to: 3.3.2
-Stable tag: 1.0
-License: GPLv2 or later
+Contributors: afragen  
+Tags: events  
+Requires at least: 3.1  
+Tested up to: 3.3.2  
+Stable tag: 1.0  
+License: GPLv2 or later  
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Add alarm/alert to iCal feed created from The Events Calendar PRO plugin.
@@ -37,14 +37,6 @@ Simple, just install The Events Calendar PRO Alarm and in the Settings page for 
 Yes. [Events Calendar PRO](http://tri.be/wordpress-events-calendar-pro/) is written by Modern Tribe, Inc.
 
 It also requires [The Events Calendar plugin](http://wordpress.org/extend/plugins/the-events-calendar/).
-
-#### Where can I report bugs? 
-
-Add a new topic on the [WordPress Support Forum](http://wordpress.org/tags/events-calendar-pro-alarm).
-
-## Screenshots
-
-![Additonal Field](./screenshot1.png)
 
 ## Changelog 
 
