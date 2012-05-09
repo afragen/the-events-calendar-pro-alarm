@@ -13,8 +13,6 @@ Are you using The Events Calendar PRO plugin? Do you wish that you could add an 
 
 Simple, just install The Events Calendar PRO Alarm and in the Settings page for The Events Calendar PRO add an Additional Field for Alarms.
 
-Thanks to Joey Kudish of tri.be for the add_filter code.
-
 ## Installation
 
 1. Upload the entire `/events-calendar-pro-alarm/` folder to the `/wp-content/plugins/` directory.
@@ -50,4 +48,6 @@ Add a new topic on the [WordPress Support Forum](http://wordpress.org/tags/event
 
 ### 1.0
 * Initial release.
+* Thanks to Joey Kudish of tri.be for the add_filter code.
+
 
