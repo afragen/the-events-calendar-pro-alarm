@@ -17,12 +17,12 @@ License URI: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 * This plugin adds an alarm functionality to The Events Calendar PRO plugin by using
 * the Additional Fields feature of Events Calendar PRO.
 *
-* @package		events-calendar-pro-alarm
-* @link			http://thefragens.com/blog/2012/05/add-alarm-to-events-calendar-pro/
-* @link 		https://github.com/afragen/events-calendar-pro-alarm/
-* @version 		1.0
-* @author 		Andy Fragen <andy@thefragens.com>
-* @copyright   	Copyright (c) 2012, Andrew Fragen
+* @package      events-calendar-pro-alarm
+* @link         http://thefragens.com/blog/2012/05/add-alarm-to-events-calendar-pro/
+* @link         https://github.com/afragen/events-calendar-pro-alarm/
+* @version      1.0
+* @author       Andy Fragen <andy@thefragens.com>
+* @copyright    Copyright (c) 2012, Andrew Fragen
 *
 * The Events Calendar PRO Alarm is free software; you can redistribute it and/or modify it under
 * the terms of the GNU General Public License version 2, as published by the
