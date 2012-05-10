@@ -12,7 +12,7 @@ GITPATH="$CURRENTDIR/" # this file should be in the base of your git repository
 
 # svn config
 SVNPATH="/tmp/$PLUGINSLUG" # path to a temp SVN repo. No trailing slash required and don't add trunk.
-SVNURL="http://plugins.svn.wordpress.org/events-calendar-pro-alarm/" # Remote SVN repo on wordpress.org, with no trailing slash
+SVNURL="http://plugins.svn.wordpress.org/the-events-calendar-pro-alarm/" # Remote SVN repo on wordpress.org, with no trailing slash
 SVNUSER="afragen" # your svn username
 
 
