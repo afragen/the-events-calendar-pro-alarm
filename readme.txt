@@ -1,9 +1,9 @@
 === The Events Calendar PRO Alarm ===
 Contributors: afragen
-Tags: events
+Tags: events, ical feed, modern tribe, tribe
 Requires at least: 3.1
 Tested up to: 3.3.2
-Stable tag: 1.02
+Stable tag: 1.03
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -47,6 +47,9 @@ Add a new topic on the [WordPress Support Forum](http://wordpress.org/tags/the-e
 1. Additional Fields settings.
 
 == Changelog ==
+
+= 1.03 =
+* File renaming for consistency
 
 = 1.02 =
 * Fixes for WP Repository display

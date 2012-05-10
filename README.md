@@ -17,7 +17,7 @@ Simple, just install The Events Calendar PRO Alarm and in the Settings page for 
 
 ## Installation
 
-1. Upload the entire `/events-calendar-pro-alarm/` folder to the `/wp-content/plugins/` directory.
+1. Upload the entire `/the-events-calendar-pro-alarm/` folder to the `/wp-content/plugins/` directory.
 1. Activate the plugin.
 1. Navigate to the **Additional Fields** section of the *Settings > The Events Calendar* page.
 1. Add an additional field.

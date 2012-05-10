@@ -5,7 +5,7 @@
 # main config
 PLUGINSLUG="events-calendar-pro-alarm"
 CURRENTDIR=`pwd`
-MAINFILE="events-calendar-pro-alarm.php" # this should be the name of your main php file in the wordpress plugin
+MAINFILE="the-events-calendar-pro-alarm.php" # this should be the name of your main php file in the wordpress plugin
 
 # git config
 GITPATH="$CURRENTDIR/" # this file should be in the base of your git repository
@@ -34,6 +34,7 @@ if [ "$NEWVERSION1" != "$NEWVERSION2" ]; then echo "Versions don't match. Exitin
 
 echo "Versions match in readme.txt and PHP file. Let's proceed..."
 
+# change into the git dir and get a commit message
 cd $GITPATH
 echo -e "Enter a commit message for this new version: \c"
 read COMMITMSG
@@ -42,10 +43,12 @@ git commit -am "$COMMITMSG"
 echo "Tagging new version in git"
 git tag -a "$NEWVERSION1" -m "Tagging version $NEWVERSION1"
 
+# push to origin
 echo "Pushing latest commit to origin, with tags"
-git push origin master
+#git push origin master
 git push origin master --tags
 
+# Export git contents to svn directory
 echo 
 echo "Creating local copy of SVN repo ..."
 svn co $SVNURL $SVNPATH
@@ -59,12 +62,14 @@ README.md
 .git
 .gitignore" "$SVNPATH/trunk/"
 
+# Change to SVN dir and commit changes
 echo "Changing directory to SVN and committing to trunk"
 cd $SVNPATH/trunk/
 # Add all new files that are not set to be ignored
 svn status | grep -v "^.[ \t]*\..*" | grep "^?" | awk '{print $2}' | xargs svn add
 svn commit --username=$SVNUSER -m "$COMMITMSG"
 
+# Create a new tag and commit it :)
 echo "Creating new SVN tag & committing it"
 cd $SVNPATH
 svn copy trunk/ tags/$NEWVERSION1/
