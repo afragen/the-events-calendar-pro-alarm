@@ -48,15 +48,6 @@ Add a new topic on the [WordPress Support Forum](http://wordpress.org/tags/the-e
 
 == Changelog ==
 
-= 1.03 =
-* File renaming for consistency
-
-= 1.02 =
-* Fixes for WP Repository display
-
-= 1.01 = 
-* Bump to publish correctly
-
 = 1.0 =
 * Initial release.
 * Thanks to Joey Kudish of tri.be for the add_filter code.
