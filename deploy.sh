@@ -3,7 +3,7 @@
 # The difference is that this script lives in the plugin's git repo & doesn't require an existing SVN repo.
 
 # main config
-PLUGINSLUG="events-calendar-pro-alarm"
+PLUGINSLUG="the-events-calendar-pro-alarm"
 CURRENTDIR=`pwd`
 MAINFILE="the-events-calendar-pro-alarm.php" # this should be the name of your main php file in the wordpress plugin
 
@@ -44,9 +44,9 @@ echo "Tagging new version in git"
 git tag -a "$NEWVERSION1" -m "Tagging version $NEWVERSION1"
 
 # push to origin
-#echo "Pushing latest commit to origin, with tags"
-#git push origin master
-#git push origin master --tags
+echo "Pushing latest commit to origin, with tags"
+git push origin master
+git push origin master --tags
 
 # Export git contents to svn directory
 echo 
