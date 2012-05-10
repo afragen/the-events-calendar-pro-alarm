@@ -48,6 +48,9 @@ Add a new topic on the [WordPress Support Forum](http://wordpress.org/tags/event
 
 == Changelog ==
 
+= 1.01 = 
+* Bump to publish correctly
+
 = 1.0 =
 * Initial release.
 * Thanks to Joey Kudish of tri.be for the add_filter code.
