@@ -3,7 +3,7 @@ Contributors: afragen
 Tags: events
 Requires at least: 3.1
 Tested up to: 3.3.2
-Stable tag: 1.01
+Stable tag: 1.02
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -17,17 +17,17 @@ Simple, just install The Events Calendar PRO Alarm and in the Settings page for 
 
 == Installation ==
 
-1. Upload the entire `/events-calendar-pro-alarm/` folder to the `/wp-content/plugins/` directory.
+1. Upload the entire `/the-events-calendar-pro-alarm/` folder to the `/wp-content/plugins/` directory.
 1. Activate the plugin.
 1. Navigate to the **Additional Fields** section of the *Settings > The Events Calendar* page.
 1. Add an additional field.
   * Field Label -> **Alarm**
   * Field Type -> **Dropdown**
   * Options (one per line)
-    * Off
-    * 15
-    * 30
-    * 60
+      * Off
+      * 15
+      * 30
+      * 60
 
 
 == Frequently Asked Questions ==
@@ -40,13 +40,16 @@ It also requires [The Events Calendar plugin](http://wordpress.org/extend/plugin
 
 = Where can I report bugs? =
 
-Add a new topic on the [WordPress Support Forum](http://wordpress.org/tags/events-calendar-pro-alarm).
+Add a new topic on the [WordPress Support Forum](http://wordpress.org/tags/the-events-calendar-pro-alarm).
 
 == Screenshots ==
 
 1. Additional Fields settings.
 
 == Changelog ==
+
+= 1.02 =
+* Fixes for WP Repository display
 
 = 1.01 = 
 * Bump to publish correctly
