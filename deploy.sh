@@ -45,7 +45,7 @@ git tag -a "$NEWVERSION1" -m "Tagging version $NEWVERSION1"
 
 # push to origin
 echo "Pushing latest commit to origin, with tags"
-#git push origin master
+git push origin master
 git push origin master --tags
 
 # Export git contents to svn directory

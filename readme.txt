@@ -1,5 +1,5 @@
 === The Events Calendar PRO Alarm ===
-Contributors: afragen
+Contributors: afragen, jkudish
 Tags: events, ical feed, modern tribe, tribe
 Requires at least: 3.1
 Tested up to: 3.3.2
