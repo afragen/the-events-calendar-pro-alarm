@@ -48,6 +48,10 @@ Add a new topic on the [WordPress Support Forum](http://wordpress.org/tags/the-e
 
 == Changelog ==
 
+= 1.2.3 =
+* Fixed to work only with class TribeEventsPro
+* continuity with fail message
+
 = 1.2.2 =
 * changed deactivate to warning
 
