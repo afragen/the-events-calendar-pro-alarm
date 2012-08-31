@@ -3,7 +3,7 @@
 Plugin Name: The Events Calendar PRO Alarm
 Plugin URI: http://wordpress.org/extend/plugins/the-events-calendar-pro-alarm/
 Description: This plugin adds an alarm functionality to The Events Calendar PRO plugin by using the Additional Fields feature of Events Calendar PRO. This evolved from the following <a href="http://tri.be/support/forums/topic/add-alarm-to-event/">Add Alarm to Event</a> forum discussion topic. The <a href="http://tri.be/wordpress-events-calendar-pro/">Events Calendar PRO plugin</a> is required.
-Version: 1.2.3
+Version: 1.3
 Text Domain: events-calendar-pro-alarm
 Author: Andy Fragen
 Author URI: http://thefragens.com/blog/2012/05/add-alarm-to-events-calendar-pro/
@@ -46,12 +46,11 @@ License URI: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 */
 /* Add your functions below this line */
 
-add_action( 'plugins_loaded', 'tecpa_fail_msg' );
+add_action( 'admin_notices', 'tecpa_fail_msg' );
 function tecpa_fail_msg() {
-	if ( !class_exists( 'TribeEventsPro' ) ) { 
+	if ( !class_exists( 'TribeEventsPro' ) ) {
 		if ( current_user_can( 'activate_plugins' ) && is_admin() ) {
 			$url = 'http://tri.be/wordpress-events-calendar-pro/?utm_source=helptab&utm_medium=promolink&utm_campaign=plugin';
-			http://tri.be/wordpress-events-calendar-pro/?utm_source=helptab&utm_medium=promolink&utm_campaign=plugin
 			$title = __( 'The Events Calendar', 'the-events-calendar-pro-alarm' );
 			echo '<div class="error"><p>'.sprintf( __( 'To begin using The Events Calendar PRO Alarm, please install the latest version of <a href="%s" class="thickbox" title="%s">The Events Calendar PRO</a>.', 'tribe-events-calendar-pro' ),$url, $title ).'</p></div>';
 		}
@@ -69,6 +68,43 @@ function tribe_ical_add_alarm( $item, $eventPost ) {
 	}
 	return $item;
 }
+
+
+add_action( 'init', 'tecpa_add_Alarm' );
+function tecpa_add_Alarm() {
+	$intervals = array( 'Off', '15', '30', '60' );
+	$intervals = implode( "\r\n", $intervals );
+	addCustomField('Alarm', 'dropdown', $intervals);
+}
+
+
+function addCustomField($label, $type = 'text', $default = '') {
+	if ( class_exists( 'TribeEvents' ) ) {
+		$customFields = tribe_get_option('custom-fields');
+		$fieldExists = false;
+
+		// Check in case the "new" custom field is already present
+		foreach ($customFields as $field) {
+			if ($field['label'] === $label)
+				$fieldExists = true;
+		}
+
+		// If it is not, add it
+		if ($fieldExists === false) {
+			$index = count($customFields) + 1;
+
+			$customFields[] = array(
+				'name' => "_ecp_custom_$index",
+				'label' => $label,
+				'type' => $type,
+				'values' => $default
+			);
+
+			tribe_update_option('custom-fields', $customFields);
+		}
+	}
+}
+
 
 /* Add your functions above this line */
 ?>

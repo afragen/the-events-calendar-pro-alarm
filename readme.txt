@@ -2,8 +2,8 @@
 Contributors: afragen, jkudish
 Tags: events, ical feed, modern tribe, tribe
 Requires at least: 3.1
-Tested up to: 3.3.2
-Stable tag: 1.2.3
+Tested up to: 3.4.1
+Stable tag: 1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -19,15 +19,7 @@ Simple, just install The Events Calendar PRO Alarm and in the Settings page for 
 
 1. Upload the entire `/the-events-calendar-pro-alarm/` folder to the `/wp-content/plugins/` directory.
 1. Activate the plugin.
-1. Navigate to the **Additional Fields** section of the *Settings > The Events Calendar* page.
-1. Add an additional field.
-  * Field Label -> **Alarm**
-  * Field Type -> **Dropdown**
-  * Options (one per line)
-      * Off
-      * 15
-      * 30
-      * 60
+1. The plugin will automatically add the required Additional Field. If you wish to change or add additional time set points, just follow the usual instructions under Additional Fields.
 
 
 == Frequently Asked Questions ==
@@ -44,9 +36,13 @@ Add a new topic on the [WordPress Support Forum](http://wordpress.org/tags/the-e
 
 == Screenshots ==
 
-1. Additional Fields settings.
+1. Additional Fields settings, generated automatically.
 
 == Changelog ==
+
+= 1.3 =
+* Automatically add required Additional Field, thanks to Barry Hughes (@barrykenobi)
+* fail message to admin_notices
 
 = 1.2.3 =
 * Fixed to work only with class TribeEventsPro
