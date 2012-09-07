@@ -3,7 +3,7 @@ Contributors: afragen, jkudish
 Tags: events, ical feed, modern tribe, tribe
 Requires at least: 3.1
 Tested up to: 3.4.1
-Stable tag: 1.3
+Stable tag: 1.3.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -39,6 +39,9 @@ Add a new topic on the [WordPress Support Forum](http://wordpress.org/tags/the-e
 1. Additional Fields settings, generated automatically.
 
 == Changelog ==
+
+= 1.3.1 =
+* Bug fix, put (working only with class TribeEventsPro) out of fail function.
 
 = 1.3 =
 * Automatically add required Additional Field, thanks to Barry Hughes (@barrykenobi)
