@@ -3,7 +3,7 @@
 Plugin Name: The Events Calendar PRO Alarm
 Plugin URI: http://wordpress.org/extend/plugins/the-events-calendar-pro-alarm/
 Description: This plugin adds an alarm functionality to The Events Calendar PRO plugin by using the Additional Fields feature of Events Calendar PRO. This evolved from the following <a href="http://tri.be/support/forums/topic/add-alarm-to-event/">Add Alarm to Event</a> forum discussion topic. The <a href="http://tri.be/wordpress-events-calendar-pro/">Events Calendar PRO plugin</a> is required.
-Version: 1.3.1
+Version: 1.3.2
 Text Domain: events-calendar-pro-alarm
 Author: Andy Fragen
 Author URI: http://thefragens.com/blog/2012/05/add-alarm-to-events-calendar-pro/
@@ -74,7 +74,7 @@ function tribe_ical_add_alarm( $item, $eventPost ) {
 
 add_action( 'init', 'tecpa_add_Alarm' );
 function tecpa_add_Alarm() {
-	$intervals = array( 'Off', '15', '30', '60' );
+	$intervals = array( '15', '30', '60' );
 	$intervals = implode( "\r\n", $intervals );
 	addCustomField('Alarm', 'dropdown', $intervals);
 }
