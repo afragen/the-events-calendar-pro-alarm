@@ -14,9 +14,7 @@ License URI: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 //Load TECProAlarm Class
 require_once( 'tecpa-class.php' );
 
-if ( class_exists( 'TribeEventsPro' ) ) {
-	add_filter( 'tribe_ical_feed_item', 'tribe_ical_add_alarm', 10, 2 );
-}
+add_filter( 'tribe_ical_feed_item', 'tribe_ical_add_alarm', 10, 2 );
 
 //This function doesn't like being in class TECProAlarm
 function tribe_ical_add_alarm( $item, $eventPost ) {
