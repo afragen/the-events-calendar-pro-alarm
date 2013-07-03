@@ -1,6 +1,6 @@
 <?php
 
-class TECProAlarm {
+class TECPro_Alarm {
 
 	public function __construct() {
 		add_action( 'admin_notices', array($this, 'tecpa_fail_msg' ));
@@ -19,9 +19,8 @@ class TECProAlarm {
 
 	public function tecpa_add_Alarm() {
 		$intervals = array( '15', '30', '60' );
-		if ( class_exists( 'TribeEventsPro' ) && version_compare( TribeEventsPro::VERSION, '2.0.9', '<' ) ) {
+		if ( class_exists( 'TribeEventsPro' ) && version_compare( TribeEventsPro::VERSION, '2.0.9', '<' ) )
 			$intervals = array( 'Off', '15', '30', '60' );
-		}		
 		$intervals = implode( "\r\n", $intervals );
 		$this->addCustomField('Alarm', 'dropdown', $intervals);
 	}
@@ -42,9 +41,9 @@ class TECProAlarm {
 				$index = count($customFields) + 1;
 
 				$customFields[] = array(
-					'name' => "_ecp_custom_$index",
-					'label' => $label,
-					'type' => $type,
+					'name'   => "_ecp_custom_$index",
+					'label'  => $label,
+					'type'   => $type,
 					'values' => $default
 				);
 
