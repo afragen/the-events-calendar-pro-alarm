@@ -1,9 +1,9 @@
 === The Events Calendar PRO Alarm ===
 Contributors: afragen, jkudish
 Tags: events, ical feed, modern tribe, tribe
-Requires at least: 3.1
-Tested up to: 3.8
-Stable tag: 1.5.1
+Requires at least: 3.7
+Tested up to: 4.0
+Stable tag: 1.6.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -28,7 +28,7 @@ Simple, just install The Events Calendar PRO Alarm and in the Settings page for 
 
 Yes. [Events Calendar PRO](http://tri.be/wordpress-events-calendar-pro/) is written by Modern Tribe, Inc.
 
-It also requires [The Events Calendar plugin](http://wordpress.org/extend/plugins/the-events-calendar/).
+It also requires [The Events Calendar plugin](http://wordpress.org/plugins/the-events-calendar/).
 
 = Where can I report bugs? =
 
@@ -39,6 +39,14 @@ Add a new topic on the [WordPress Support Forum](http://wordpress.org/tags/the-e
 1. Additional Fields settings, generated automatically.
 
 == Changelog ==
+
+= 1.6.1 =
+
+= 1.6.0 =
+* Tested with WP 4.0
+* Update for WP Coding Guidelines -- again
+* Fix some links, etc.
+* Moved `add_filter` to class constructor
 
 = 1.5.1 =
 * Tested for WP 3.8, works great!
