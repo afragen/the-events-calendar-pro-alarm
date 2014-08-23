@@ -19,16 +19,13 @@ class TECPro_Alarm {
 	}
 
 	public function tecpa_add_Alarm() {
-		$intervals     = array( '15', '30', '60' );
-		if ( class_exists( 'TribeEventsPro' ) && version_compare( TribeEventsPro::VERSION, '2.0.9', '<' ) ) {
-			$intervals = array( 'Off', '15', '30', '60' );
-		}
-		$intervals     = implode( "\r\n", $intervals );
+		$intervals = array( '15', '30', '60' );
+		$intervals = implode( "\r\n", $intervals );
 		$this->add_custom_field( 'Alarm', 'dropdown', $intervals );
 	}
 
 	public function add_custom_field( $label, $type = 'text', $default = '' ) {
-		if ( class_exists( 'TribeEvents' ) ) {
+		if ( class_exists( 'TribeEventsPro' ) ) {
 			$custom_fields = tribe_get_option( 'custom-fields' );
 			$field_exists  = false;
 

@@ -3,7 +3,7 @@ Contributors: afragen, jkudish
 Tags: events, ical feed, modern tribe, tribe
 Requires at least: 3.7
 Tested up to: 4.0
-Stable tag: 1.6.0
+Stable tag: 1.7.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -40,9 +40,12 @@ Add a new topic on the [WordPress Support Forum](http://wordpress.org/tags/the-e
 
 == Changelog ==
 
+= 1.7.0 =
+* code cleanup
+
 = 1.6.0 =
 * Tested with WP 4.0
-* Update for WP Coding Guidelines -- again
+* Update for WP Coding Guidelines - again
 * Fix some links, etc.
 * Moved `add_filter` to class constructor
 
