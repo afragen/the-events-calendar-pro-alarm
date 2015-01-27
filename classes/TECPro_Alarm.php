@@ -7,9 +7,9 @@ class TECPro_Alarm {
 		add_action( 'init', array( $this, 'tecpa_add_Alarm' ) );
 		add_filter( 'tribe_ical_feed_item', array( $this, 'ical_add_alarm' ), 10, 2 );
 	}
-	
+
 	public function tecpa_fail_msg() {
-		if ( ! class_exists( 'TribeEventsPro' ) ) {
+		if ( ! class_exists( 'Tribe__Events__Pro__Events_Pro' ) ) {
 			if ( current_user_can( 'activate_plugins' ) && is_admin() ) {
 				$url   = 'http://tri.be/wordpress-events-calendar-pro/?utm_source=helptab&utm_medium=promolink&utm_campaign=plugin';
 				$title = __( 'The Events Calendar', 'the-events-calendar-pro-alarm' );
@@ -25,7 +25,7 @@ class TECPro_Alarm {
 	}
 
 	public function add_custom_field( $label, $type = 'text', $default = '' ) {
-		if ( class_exists( 'TribeEventsPro' ) ) {
+		if ( class_exists( 'Tribe__Events__Pro__Events_Pro' ) ) {
 			$custom_fields = tribe_get_option( 'custom-fields' );
 			$field_exists  = false;
 
