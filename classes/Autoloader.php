@@ -3,10 +3,9 @@
 namespace TECPA;
 
 /**
- * Class Autoloader
- * generic autoload class for use with TEC/ECP add-on plugins
+ * Class Autoloader - generic autoload class
  *
- * Class aliases are in /classes/310-classes for user still on TEC/ECP 3.9 or lower
+ * Class aliases are in /classes/310-class-aliases for user still on TEC/ECP 3.9 or lower
  * To use with different plugins be sure to create a new namespace.
  *
  * @package   Autoloader
@@ -15,6 +14,7 @@ namespace TECPA;
  * @license   GPL-2.0+
  * @link      http://github.com/afragen/autoloader
  * @copyright 2015 Andy Fragen
+ * @version   1.0.0
  */
 class Autoloader {
 

@@ -14,6 +14,6 @@ Requires WP:  3.8
 */
 
 //Load Autoloader Class
-require_once( dirname( __FILE__ ) . '/classes/Autoloader.php' );
+require_once( __DIR__ . '/classes/Autoloader.php' );
 
 new TECPro_Alarm();
