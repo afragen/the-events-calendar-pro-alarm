@@ -15,6 +15,8 @@ Are you using The Events Calendar PRO plugin? Do you wish that you could add an 
 
 Simple, just install The Events Calendar PRO Alarm and in the Settings page for The Events Calendar PRO add an Additional Field for Alarms.
 
+Development on [GitHub](https://github.com/afragen/the-events-calendar-pro-alarm). Pull requests are welcome.
+
 == Installation ==
 
 1. Upload the entire `/the-events-calendar-pro-alarm/` folder to the `/wp-content/plugins/` directory.
@@ -44,6 +46,7 @@ Add a new topic on the [WordPress Support Forum](http://wordpress.org/tags/the-e
 * added autoloader class to handle classes and class aliases for users of ECP 3.9 or lower
 * requires PHP 5.3 or greater as autoload class requires namespacing
 * renamed directory and class names to allow for PSR 0 loading
+* add .pot file for translations
 
 = 1.7.1 =
 * tested to 4.1

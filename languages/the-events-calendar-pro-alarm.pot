@@ -1,0 +1,32 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The Events Calendar PRO Alarm\n"
+"POT-Creation-Date: 2015-01-29 20:00-0800\n"
+"PO-Revision-Date: 2015-01-29 20:00-0800\n"
+"Last-Translator: Andy Fragen <andy@thefragens.com>\n"
+"Language-Team: Andy Fragen <andy@thefragens.com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.3\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: classes/Tribe__Events_/Pro__Alarm.php:15
+msgid "The Events Calendar"
+msgstr ""
+
+#: classes/Tribe__Events_/Pro__Alarm.php:16
+#, php-format
+msgid ""
+"To begin using The Events Calendar PRO Alarm, please install the latest "
+"version of <a href=\"%s\" class=\"thickbox\" title=\"%s\">The Events "
+"Calendar PRO</a>."
+msgstr ""

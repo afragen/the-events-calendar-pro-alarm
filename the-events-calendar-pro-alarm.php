@@ -16,4 +16,6 @@ Requires WP:  3.8
 //Load Autoloader Class
 require_once( __DIR__ . '/classes/Autoloader.php' );
 
+load_plugin_textdomain( 'the-events-calendar-pro-alarm', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
+
 new Tribe__Events__Pro__Alarm();
