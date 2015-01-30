@@ -43,8 +43,8 @@ Add a new topic on the [WordPress Support Forum](http://wordpress.org/tags/the-e
 == Changelog ==
 
 = 2.0.0 =
-* added autoloader class to handle classes and class aliases for users of ECP 3.9 or lower
-* requires PHP 5.3 or greater as autoload class requires namespacing
+* added [class Autoloader](https://github.com/afragen/autoloader), requires PHP 5.3 or greater as autoloader class requires namespacing 
+* class aliases for users of ECP 3.9 or lower
 * renamed directory and class names to allow for PSR 0 loading
 * add .pot file for translations
 
