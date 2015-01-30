@@ -1,6 +1,6 @@
 <?php
 
-class TECPro_Alarm {
+class Tribe__Events__Pro__Alarm {
 
 	public function __construct() {
 		add_action( 'admin_notices', array( $this, 'tecpa_fail_msg' ) );

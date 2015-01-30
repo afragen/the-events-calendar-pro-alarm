@@ -16,4 +16,4 @@ Requires WP:  3.8
 //Load Autoloader Class
 require_once( __DIR__ . '/classes/Autoloader.php' );
 
-new TECPro_Alarm();
+new Tribe__Events__Pro__Alarm();
