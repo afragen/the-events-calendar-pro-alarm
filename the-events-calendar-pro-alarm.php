@@ -13,9 +13,48 @@ Requires PHP: 5.3
 Requires WP:  3.8
 */
 
-//Load Autoloader Class
-require_once( __DIR__ . '/classes/Autoloader.php' );
+load_plugin_textdomain( 'the-events-calendar-pro-alarm', false, __DIR__ . '/languages' );
 
-load_plugin_textdomain( 'the-events-calendar-pro-alarm', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
+function ecpalarm_load_failure() {
+	global $pagenow;
 
-new Tribe__Events__Pro__Alarm();
+	// Only show message on the plugin admin screen
+	if ( 'plugins.php' !== $pagenow ) {
+		return;
+	}
+
+	// @todo more work may be needed for proper l10n here
+	$msg = __( 'The Events Calendar PRO Alarm could not run as it&#146;s minimum requirements were not met.', 'the-events-calendar-pro-alarm' );
+	echo '<div class="error"> <p>' . $msg . '</p> </div>';
+}
+
+function ecpalarm_init() {
+	global $ecpalarm;
+
+	// Check for PHP 5.3 compatibility
+	if ( version_compare( PHP_VERSION, '5.3', '<' ) ) {
+		add_action( 'admin_notices', 'ecpalarm_load_failure' );
+		return;
+	}
+
+	// Back compat classes
+	$compatibility = array(
+		'Tribe__Events__Pro__Events_Pro' => __DIR__ . '/classes/Back_Compat/Events_Pro.php',
+	);
+
+	// Plugin namespace root
+	$root = array(
+		'Fragen\ECP_Alarm' => __DIR__ . '/classes/ECP_Alarm'
+	);
+
+	// Autoloading
+	require_once( __DIR__ . '/classes/ECP_Alarm/Autoloader.php' );
+	$class_loader = 'Fragen\ECP_Alarm\Autoloader';
+	new $class_loader( $root, $compatibility );
+
+	// Launch
+	$launch_method = array( 'Fragen\ECP_Alarm\Alarm', 'instance' );
+	$ecpalarm = call_user_func( $launch_method );
+}
+
+add_action( 'plugins_loaded', 'ecpalarm_init', 15 );
