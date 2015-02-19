@@ -39,16 +39,16 @@ function ecpalarm_init() {
 
 	// Back compat classes
 	$compatibility = array(
-		'Tribe__Events__Pro__Events_Pro' => __DIR__ . '/classes/Back_Compat/Events_Pro.php',
+		'Tribe__Events__Pro__Events_Pro' => __DIR__ . '/src/Back_Compat/Events_Pro.php',
 	);
 
 	// Plugin namespace root
 	$root = array(
-		'Fragen\ECP_Alarm' => __DIR__ . '/classes/ECP_Alarm'
+		'Fragen\ECP_Alarm' => __DIR__ . '/src/ECP_Alarm'
 	);
 
 	// Autoloading
-	require_once( __DIR__ . '/classes/ECP_Alarm/Autoloader.php' );
+	require_once( __DIR__ . '/src/ECP_Alarm/Autoloader.php' );
 	$class_loader = 'Fragen\ECP_Alarm\Autoloader';
 	new $class_loader( $root, $compatibility );
 
