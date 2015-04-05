@@ -2,8 +2,8 @@
 Contributors: afragen
 Tags: events, ical feed, modern tribe, tribe
 Requires at least: 3.8
-Tested up to: 4.1
-Stable tag: 2.0.0
+Tested up to: 4.2
+Stable tag: 2.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -41,6 +41,11 @@ Add a new topic on the [WordPress Support Forum](http://wordpress.org/tags/the-e
 1. Additional Fields settings, generated automatically.
 
 == Changelog ==
+
+= 2.1.0 =
+* use WPUpdatePhp project for PHP version checking
+* better strings for i18n
+* updated .pot file
 
 = 2.0.0 =
 * added [class Autoloader](https://github.com/afragen/autoloader), requires PHP 5.3 or greater as autoloader class requires namespacing 
