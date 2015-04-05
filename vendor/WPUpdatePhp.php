@@ -30,7 +30,7 @@ class WPUpdatePhp {
 	public function __construct( $minimum_version, $recommended_version = null ) {
 		$this->minimum_version = $minimum_version;
 		$this->recommended_version = $recommended_version;
-		$this->plugin_name = __( 'this plugin' );
+		$this->plugin_name = __( 'this plugin', 'the-events-calendar-pro-alarm' );
 	}
 
 	/**
@@ -98,9 +98,9 @@ class WPUpdatePhp {
 		?>
 		<div class="error notice is-dismissible">
 			<p>
-			<?php printf( __( 'Unfortunately, %1$s can not run on PHP versions older than %2$s.' ), $this->plugin_name, $this->minimum_version ); ?>
+			<?php printf( __( 'Unfortunately, %1$s can not run on PHP versions older than %2$s.', 'the-events-calendar-pro-alarm' ), $this->plugin_name, $this->minimum_version ); ?>
 			<br>
-			<?php printf( __( 'Read more information about %show you can update%s.' ), '<a href="http://www.wpupdatephp.com/update/">', '</a>' ); ?>
+			<?php printf( __( 'Read more information about %show you can update%s.', 'the-events-calendar-pro-alarm' ), '<a href="http://www.wpupdatephp.com/update/">', '</a>' ); ?>
 			</p>
 		</div>
 		<?php
@@ -114,9 +114,9 @@ class WPUpdatePhp {
 		?>
 		<div class="error notice is-dismissible">
 			<p>
-				<?php printf( __( '%1$s recommends a PHP version greater than %2$s.' ), ucfirst( $this->plugin_name ), $this->recommended_version ); ?>
+				<?php printf( __( '%1$s recommends a PHP version greater than %2$s.', 'the-events-calendar-pro-alarm' ), ucfirst( $this->plugin_name ), $this->recommended_version ); ?>
 				<br>
-				<?php printf( __( 'Read more information about %show you can update%s.' ), '<a href="http://www.wpupdatephp.com/update/">', '</a>' ); ?>
+				<?php printf( __( 'Read more information about %show you can update%s.', 'the-events-calendar-pro-alarm' ), '<a href="http://www.wpupdatephp.com/update/">', '</a>' ); ?>
 			</p>
 		</div>
 		<?php
