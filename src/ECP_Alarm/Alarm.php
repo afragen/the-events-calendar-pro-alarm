@@ -22,19 +22,25 @@ class Alarm {
 	}
 
 	public function __construct() {
-		add_action( 'admin_notices', array( $this, 'fail_msg' ) );
+		if ( ! class_exists( 'Tribe__Events__Pro__Events_Pro' ) ) {
+			add_action( 'admin_notices', array( $this, 'fail_msg' ) );
+		}
 		add_action( 'init', array( $this, 'add_Alarm' ) );
 		add_filter( 'tribe_ical_feed_item', array( $this, 'ical_add_alarm' ), 10, 2 );
 	}
 
 	public function fail_msg() {
-		if ( ! class_exists( 'Tribe__Events__Pro__Events_Pro' ) ) {
-			if ( current_user_can( 'activate_plugins' ) && is_admin() ) {
-				$url   = 'http://tri.be/wordpress-events-calendar-pro/?utm_source=helptab&utm_medium=promolink&utm_campaign=plugin';
-				$title = __( 'The Events Calendar', 'the-events-calendar-pro-alarm' );
-				echo '<div class="error"><p>' . sprintf( __( 'To begin using The Events Calendar PRO Alarm, please install the latest version of <a href="%s" class="thickbox" title="%s">The Events Calendar PRO</a>.', 'the-events-calendar-pro-alarm' ), $url, $title ) . '</p></div>';
-			}
-		}
+		?>
+		<div class="error notice is-dismissible">
+			<p>
+				<?php printf( __( 'To begin using The Events Calendar PRO Alarm, please install the latest version of %sThe Events Calendar PRO%s', 'the-events-calendar-pro-alarm' ),
+					'<a href="https://theeventscalendar.com/product/wordpress-events-calendar-pro/?source=tri.be">',
+					'</a>'
+				);
+				?>
+			</p>
+		</div>
+		<?php
 	}
 
 	public function add_Alarm() {

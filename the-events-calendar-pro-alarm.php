@@ -13,8 +13,6 @@ Requires PHP: 5.3
 Requires WP:  3.8
 */
 
-load_plugin_textdomain( 'the-events-calendar-pro-alarm', false, __DIR__ . '/languages' );
-
 require_once ( plugin_dir_path( __FILE__ ) . '/vendor/WPUpdatePhp.php' );
 $updatePhp = new WPUpdatePhp( '5.3.0' );
 $updatePhp->set_plugin_name( 'The Events Calendar PRO Alarm' );
@@ -22,6 +20,8 @@ $updatePhp->set_plugin_name( 'The Events Calendar PRO Alarm' );
 if ( ! $updatePhp->does_it_meet_required_php_version() ) {
 	return false;
 }
+
+load_plugin_textdomain( 'the-events-calendar-pro-alarm', false, __DIR__ . '/languages' );
 
 function ecpalarm_init() {
 	global $ecpalarm;
