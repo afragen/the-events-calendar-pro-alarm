@@ -15,27 +15,16 @@ Requires WP:  3.8
 
 load_plugin_textdomain( 'the-events-calendar-pro-alarm', false, __DIR__ . '/languages' );
 
-function ecpalarm_load_failure() {
-	global $pagenow;
+require_once ( plugin_dir_path( __FILE__ ) . '/vendor/WPUpdatePhp.php' );
+$updatePhp = new WPUpdatePhp( '5.3.0' );
+$updatePhp->set_plugin_name( 'The Events Calendar PRO Alarm' );
 
-	// Only show message on the plugin admin screen
-	if ( 'plugins.php' !== $pagenow ) {
-		return;
-	}
-
-	// @todo more work may be needed for proper l10n here
-	$msg = __( 'The Events Calendar PRO Alarm could not run as it&#146;s minimum requirements were not met.', 'the-events-calendar-pro-alarm' );
-	echo '<div class="error"> <p>' . $msg . '</p> </div>';
+if ( ! $updatePhp->does_it_meet_required_php_version() ) {
+	return false;
 }
 
 function ecpalarm_init() {
 	global $ecpalarm;
-
-	// Check for PHP 5.3 compatibility
-	if ( version_compare( PHP_VERSION, '5.3', '<' ) ) {
-		add_action( 'admin_notices', 'ecpalarm_load_failure' );
-		return;
-	}
 
 	// Back compat classes
 	$compatibility = array(
