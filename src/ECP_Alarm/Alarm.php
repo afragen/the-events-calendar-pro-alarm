@@ -22,7 +22,7 @@ class Alarm {
 	}
 
 	public function __construct() {
-		if ( ! class_exists( 'Tribe__Events__Pro__Events_Pro' ) ) {
+		if ( ! class_exists( 'Tribe__Events__Pro__Main' ) ) {
 			add_action( 'admin_notices', array( $this, 'fail_msg' ) );
 		}
 		add_action( 'init', array( $this, 'add_Alarm' ) );
@@ -50,7 +50,7 @@ class Alarm {
 	}
 
 	public function add_custom_field( $label, $type = 'text', $default = '' ) {
-		if ( class_exists( 'Tribe__Events__Pro__Events_Pro' ) ) {
+		if ( class_exists( 'Tribe__Events__Pro__Main' ) ) {
 			$custom_fields = tribe_get_option( 'custom-fields' );
 			$field_exists  = false;
 

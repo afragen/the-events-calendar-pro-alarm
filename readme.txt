@@ -3,7 +3,7 @@ Contributors: afragen
 Tags: events, ical feed, modern tribe, tribe
 Requires at least: 3.8
 Tested up to: 4.2
-Stable tag: 2.1.0
+Stable tag: 2.2.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -41,6 +41,9 @@ Add a new topic on the [WordPress Support Forum](http://wordpress.org/tags/the-e
 1. Additional Fields settings, generated automatically.
 
 == Changelog ==
+
+= 2.2.0 =
+* fix for _new_ `Tribe__Events__Pro__Main` class
 
 = 2.1.0 =
 * use WPUpdatePhp project for PHP version checking
