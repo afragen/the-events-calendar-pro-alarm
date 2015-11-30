@@ -1,6 +1,8 @@
 <?php
 namespace Fragen\ECP_Alarm;
 
+use Tribe__Events__Pro__Custom_Meta;
+
 class Alarm {
 
 	protected static $object = false;
@@ -78,7 +80,7 @@ class Alarm {
 	}
 
 	public static function ical_add_alarm( $item, $eventPost ) {
-		$alarm = tribe_get_custom_field( 'Alarm', $eventPost->ID );
+		$alarm = Tribe__Events__Pro__Custom_Meta::get_custom_field_by_label( 'Alarm', $eventPost->ID );
 		if ( ! empty( $alarm ) && is_numeric( $alarm ) ) {
 			$item[] = 'BEGIN:VALARM';
 			$item[] = 'TRIGGER:-PT' . $alarm . "M";
