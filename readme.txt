@@ -42,6 +42,9 @@ Add a new topic on the [WordPress Support Forum](http://wordpress.org/tags/the-e
 
 == Changelog ==
 
+= 2.3.1 =
+* fix plugin name in error notice
+
 = 2.3.0 =
 * updated WPUpdatePhp
 * tested to WP 4.4
