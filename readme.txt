@@ -16,6 +16,8 @@ Are you using The Events Calendar PRO plugin? Do you wish that you could add an 
 
 Simple, just install The Events Calendar PRO Alarm and in the Settings page for The Events Calendar PRO add an Additional Field for Alarms.
 
+Now when you download and install the events `.ics` file on your calendar an alert before the event will sound.
+
 Development on [GitHub](https://github.com/afragen/the-events-calendar-pro-alarm). Pull requests are welcome.
 
 == Installation ==
