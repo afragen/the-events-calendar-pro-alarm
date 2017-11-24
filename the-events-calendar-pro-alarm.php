@@ -43,8 +43,8 @@ function ecpalarm_init() {
 	);
 
 	// Autoloading
-	require_once( __DIR__ . '/src/ECP_Alarm/Autoloader.php' );
-	$class_loader = 'Fragen\\ECP_Alarm\\Autoloader';
+	require_once __DIR__ . '/src/Autoloader.php';
+	$class_loader = 'Fragen\\Autoloader';
 	new $class_loader( $root, $compatibility );
 
 	// Launch

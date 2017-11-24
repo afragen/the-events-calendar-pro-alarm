@@ -43,6 +43,7 @@ Add a new topic on the [WordPress Support Forum](http://wordpress.org/tags/the-e
 
 == Changelog ==
 
+* added generic Autoloader
 = 2.3.2 =
 * use our own version checking
 
