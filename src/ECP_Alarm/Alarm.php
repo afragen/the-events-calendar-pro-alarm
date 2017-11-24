@@ -1,4 +1,5 @@
 <?php
+
 namespace Fragen\ECP_Alarm;
 
 use Tribe__Events__Pro__Custom_Meta;
@@ -12,7 +13,7 @@ class Alarm {
 	 * method - this prevents unnecessary work in rebuilding the object and
 	 * querying to construct a list of categories, etc.
 	 *
-	 * @return Alarm
+	 * @return bool|Alarm
 	 */
 	public static function instance() {
 		$class = __CLASS__;
@@ -27,7 +28,7 @@ class Alarm {
 		if ( ! class_exists( 'Tribe__Events__Pro__Main' ) ) {
 			add_action( 'admin_notices', array( $this, 'fail_msg' ) );
 		}
-		add_action( 'init', array( $this, 'add_Alarm' ) );
+		add_action( 'init', array( $this, 'add_alarm' ) );
 		add_filter( 'tribe_ical_feed_item', array( $this, 'ical_add_alarm' ), 10, 2 );
 	}
 
@@ -45,7 +46,7 @@ class Alarm {
 		<?php
 	}
 
-	public function add_Alarm() {
+	public function add_alarm() {
 		$intervals = array( '15', '30', '60' );
 		$intervals = implode( "\r\n", $intervals );
 		$this->add_custom_field( 'Alarm', 'dropdown', $intervals );
@@ -72,7 +73,7 @@ class Alarm {
 					'name'   => "_ecp_custom_$index",
 					'label'  => $label,
 					'type'   => $type,
-					'values' => $default
+					'values' => $default,
 				);
 
 				tribe_update_option( 'custom-fields', $custom_fields );

@@ -33,13 +33,13 @@ function ecpalarm_init() {
 
 	// Back compat classes
 	$compatibility = array(
-			'Tribe__Events__Pro__Main'        => __DIR__ . '/src/Back_Compat/Events_Pro.php',
-			'Tribe__Events__Pro__Custom_Meta' => __DIR__ . '/src/Back_Compat/Custom_Meta.php',
+		'Tribe__Events__Pro__Main'        => __DIR__ . '/src/Back_Compat/Events_Pro.php',
+		'Tribe__Events__Pro__Custom_Meta' => __DIR__ . '/src/Back_Compat/Custom_Meta.php',
 	);
 
 	// Plugin namespace root
 	$root = array(
-			'Fragen\\ECP_Alarm' => __DIR__ . '/src/ECP_Alarm'
+		'Fragen\\ECP_Alarm' => __DIR__ . '/src/ECP_Alarm',
 	);
 
 	// Autoloading
