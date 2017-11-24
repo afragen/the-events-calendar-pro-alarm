@@ -35,7 +35,7 @@ class Alarm {
 		?>
 		<div class="error notice is-dismissible">
 			<p>
-				<?php printf( __( 'To begin using The Events Calendar PRO Alarm, please install the latest version of %sThe Events Calendar PRO%s', 'the-events-calendar-pro-alarm' ),
+				<?php printf( esc_html__( 'To begin using The Events Calendar PRO Alarm, please install the latest version of %sThe Events Calendar PRO%s', 'the-events-calendar-pro-alarm' ),
 					'<a href="https://theeventscalendar.com/product/wordpress-events-calendar-pro/?source=tri.be">',
 					'</a>'
 				);

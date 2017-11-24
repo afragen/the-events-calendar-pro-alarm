@@ -18,7 +18,7 @@ if ( version_compare( '5.3.0', PHP_VERSION, '>=' ) ) {
 	?>
 	<div class="error notice is-dismissible">
 		<p>
-			<?php esc_html_e( 'The Events Calendar PRO Alarm cannot run on PHP versions older than 5.3.0. Please contact your hosting provider to update your site.', 'the-events-calendar-pro-alarm' ); ?>
+			<?php printf( esc_html__( 'The Events Calendar PRO Alarm cannot run on PHP versions older than %s. Please contact your hosting provider to update your site.', 'the-events-calendar-pro-alarm' ), '5.3.0' ); ?>
 		</p>
 	</div>
 	<?php
