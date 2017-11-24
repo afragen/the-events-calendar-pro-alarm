@@ -53,13 +53,14 @@ class Alarm {
 
 	public function add_custom_field( $label, $type = 'text', $default = '' ) {
 		if ( class_exists( 'Tribe__Events__Pro__Main' ) ) {
-			$custom_fields = tribe_get_option( 'custom-fields' );
+			$custom_fields = tribe_get_option( 'custom-fields', array() );
 			$field_exists  = false;
 
 			// Check in case the "new" custom field is already present
 			foreach ( $custom_fields as $field ) {
 				if ( $field['label'] === $label ) {
 					$field_exists = true;
+					break;
 				}
 			}
 
