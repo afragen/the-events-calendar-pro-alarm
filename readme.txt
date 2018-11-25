@@ -2,8 +2,8 @@
 Contributors: afragen
 Tags: events, ical feed, modern tribe, tribe
 Requires at least: 3.8
-Tested up to: 4.9
-Stable tag: 2.3.3
+Tested up to: 5.0
+Stable tag: 2.3.4
 Requires PHP: 5.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -44,6 +44,9 @@ Add a new topic on the [WordPress Support Forum](http://wordpress.org/tags/the-e
 1. Additional Fields settings, generated automatically.
 
 == Changelog ==
+
+= 2.3.4 =
+* switch to composer for autoloader
 
 = 2.3.3 =
 * added generic Autoloader
