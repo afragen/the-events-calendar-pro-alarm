@@ -20,17 +20,11 @@ class ComposerStaticInit59c474749b82db970e551c8573db8e40
         ),
     );
 
-    public static $classMap = array (
-        'Tribe__Events__Pro__Custom_Meta' => __DIR__ . '/../..' . '/src/Back_Compat/Custom_Meta.php',
-        'Tribe__Events__Pro__Main' => __DIR__ . '/../..' . '/src/Back_Compat/Events_Pro.php',
-    );
-
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit59c474749b82db970e551c8573db8e40::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit59c474749b82db970e551c8573db8e40::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit59c474749b82db970e551c8573db8e40::$classMap;
 
         }, null, ClassLoader::class);
     }
