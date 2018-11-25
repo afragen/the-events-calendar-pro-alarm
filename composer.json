@@ -1,0 +1,42 @@
+{
+    "name": "afragen/the-events-calendar-pro-alarm",
+    "description": "This plugin adds an alarm functionality to The Events Calendar PRO plugin by using the Additional Fields feature of Events Calendar PRO.",
+    "type": "wordpress-plugin",
+    "keywords": [
+        "modern tribe",
+        "events",
+        "calendar pro",
+        "alarm"
+    ],
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Andy Fragen",
+            "email": "andy@thefragens.com",
+            "homepage": "https://thefragens.com",
+            "role": "Developer"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/afragen/the-events-calendar-pro-alarm"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/afragen/the-events-calendar-pro-alarm/issues",
+        "source": "https://github.com/afragen/the-events-calendar-pro-alarm"
+    },
+    "prefer-stable": true,
+    "require": {
+        "php": ">=5.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Fragen\\ECP_Alarm\\": "src/ECP_Alarm/"
+        },
+        "classmap": [
+            "src/Back_Compat/"
+        ]
+    }
+}
