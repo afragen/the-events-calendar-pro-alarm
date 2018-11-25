@@ -26,10 +26,10 @@ if ( version_compare( '5.3.0', PHP_VERSION, '>=' ) ) {
 	return false;
 }
 
-load_plugin_textdomain( 'the-events-calendar-pro-alarm', false, __DIR__ . '/languages' );
-
 function ecpalarm_init() {
 	global $ecpalarm;
+
+	load_plugin_textdomain( 'the-events-calendar-pro-alarm', false, __DIR__ . '/languages' );
 
 	// Autoloading
 	require_once __DIR__ . '/vendor/autoload.php';
@@ -39,4 +39,4 @@ function ecpalarm_init() {
 	$ecpalarm      = call_user_func( $launch_method );
 }
 
-add_action( 'plugins_loaded', 'ecpalarm_init', 15 );
+add_action( 'admin_init', 'ecpalarm_init', 15 );
