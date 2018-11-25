@@ -34,9 +34,6 @@
     "autoload": {
         "psr-4": {
             "Fragen\\ECP_Alarm\\": "src/ECP_Alarm/"
-        },
-        "classmap": [
-            "src/Back_Compat/"
-        ]
+        }
     }
 }

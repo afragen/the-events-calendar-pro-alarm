@@ -31,21 +31,8 @@ load_plugin_textdomain( 'the-events-calendar-pro-alarm', false, __DIR__ . '/lang
 function ecpalarm_init() {
 	global $ecpalarm;
 
-	// Back compat classes
-	$compatibility = array(
-		'Tribe__Events__Pro__Main'        => __DIR__ . '/src/Back_Compat/Events_Pro.php',
-		'Tribe__Events__Pro__Custom_Meta' => __DIR__ . '/src/Back_Compat/Custom_Meta.php',
-	);
-
-	// Plugin namespace root
-	$root = array(
-		'Fragen\\ECP_Alarm' => __DIR__ . '/src/ECP_Alarm',
-	);
-
 	// Autoloading
-	require_once __DIR__ . '/src/Autoloader.php';
-	$class_loader = 'Fragen\\Autoloader';
-	new $class_loader( $root, $compatibility );
+	require_once __DIR__ . '/vendor/autoload.php';
 
 	// Launch
 	$launch_method = array( 'Fragen\\ECP_Alarm\\Alarm', 'instance' );
