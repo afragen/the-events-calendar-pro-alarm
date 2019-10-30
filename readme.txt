@@ -2,7 +2,7 @@
 Contributors: afragen
 Tags: events, ical feed, modern tribe, tribe
 Requires at least: 3.8
-Tested up to: 5.2
+Tested up to: 5.3
 Stable tag: 2.3.4
 Requires PHP: 5.3
 License: GPLv2 or later
