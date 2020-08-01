@@ -29,11 +29,16 @@
     },
     "prefer-stable": true,
     "require": {
-        "php": ">=5.3"
+        "php": ">=7.0"
     },
     "autoload": {
         "psr-4": {
             "Fragen\\ECP_Alarm\\": "src/ECP_Alarm/"
         }
+    },
+    "scripts": {
+        "post-update-cmd": [
+            "wp i18n make-pot . languages/the-events-calendar-pro-alarm.pot"
+        ]
     }
 }

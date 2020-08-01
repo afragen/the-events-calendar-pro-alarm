@@ -1,10 +1,10 @@
 === The Events Calendar PRO Alarm ===
 Contributors: afragen
 Tags: events, ical feed, modern tribe, tribe
-Requires at least: 3.8
-Tested up to: 5.3
-Stable tag: 2.3.4
-Requires PHP: 5.3
+Requires at least: 5.2
+Tested up to: 5.5
+Stable tag: 3.0.0
+Requires PHP: 7.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -31,7 +31,7 @@ Development on [GitHub](https://github.com/afragen/the-events-calendar-pro-alarm
 
 = Does the plugin require the paid The Events Calendar PRO plugin? =
 
-Yes. [Events Calendar PRO](http://tri.be/wordpress-events-calendar-pro/) is written by Modern Tribe, Inc.
+Yes. [Events Calendar PRO](https://theeventscalendar.com/products/wordpress-events-calendar/) is written by Modern Tribe, Inc.
 
 It also requires [The Events Calendar plugin](http://wordpress.org/plugins/the-events-calendar/).
 
@@ -44,6 +44,11 @@ Add a new topic on the [WordPress Support Forum](http://wordpress.org/tags/the-e
 1. Additional Fields settings, generated automatically.
 
 == Changelog ==
+
+= 3.0.0 =
+* update requirements, keep updated
+* refactored
+* ensure proper function with latest Events Calendar PRO
 
 = 2.3.4 =
 * switch to composer for autoloader
@@ -75,7 +80,7 @@ Add a new topic on the [WordPress Support Forum](http://wordpress.org/tags/the-e
 * updated .pot file
 
 = 2.0.0 =
-* added [class Autoloader](https://github.com/afragen/autoloader), requires PHP 5.3 or greater as autoloader class requires namespacing 
+* added [class Autoloader](https://github.com/afragen/autoloader), requires PHP 5.3 or greater as autoloader class requires namespacing
 * class aliases for users of ECP 3.9 or lower
 * renamed directory and class names to allow for PSR 4 loading
 * add .pot file for translations
